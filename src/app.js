@@ -5,9 +5,7 @@ const morgan = require('morgan');
 const helmet = require('helmet')
 const rateLimit =require('express-rate-limit')
 const app = express();
-const { Server } = require("socket.io");
-const http = require("http");
-const createServer = require('./socket')
+const createServer = require('./services/socket')
 
 
 if (process.env.NODE_ENV === 'development') {
